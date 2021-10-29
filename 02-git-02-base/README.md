@@ -30,4 +30,6 @@ origin	https://github.com/1umines/devops-netology.git (push)
 
 Локально добавлены 3 репозетория: GitНub, GitLab, bitbucket
 
-
+Заливаем локальный репозиторий на gitlab.com и itbucket
+git push -u gitlab 
+git push -u bitbucket

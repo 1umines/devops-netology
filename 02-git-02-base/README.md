@@ -42,3 +42,28 @@ git push -u origin main
 git push -u gitlab main
 git push -u bitbucket main
 ```
+
+Теги
+создание легковестного тега
+```
+git tag v0.0
+```
+
+аннотированный тег с комментарием 
+```
+git tag -a v0.1 -m 'annot tag'
+```
+проверка 
+```
+git show v0.1
+MacBook-lumines:devops-netology lumines$ git show v0.1
+tag v0.1
+Tagger: Kravtsov Egor <luminesx@gmail.com>
+Date:   Fri Oct 29 20:32:58 2021 +0300
+
+annot tag
+
+commit 4c5e92e9c46992b5433df379510aed6eec94748b (HEAD -> main, tag: v0.1, tag: v0.0, origin/main, origin/HEAD, gitlab/main)
+Author: Kravtsov Egor <luminesx@gmail.com>
+Date:   Fri Oct 29 18:49:25 2021 +0300
+```

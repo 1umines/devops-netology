@@ -1,7 +1,9 @@
 Задание Основы Git
 
 Создан публичный репозиторий на GitLab
+```
 https://gitlab.com/1umines/devops-netology
+```
 Создан публичный репозиторий на bitbucket
 https://bitbucket.org/1umines/devops-netology/src/master/
 

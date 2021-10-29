@@ -38,7 +38,7 @@ origin	https://github.com/1umines/devops-netology.git (push)
 
 Заливаем локальный репозиторий на gitlab.com и itbucket
 ```
-git push -u origin
-git push -u gitlab 
-git push -u bitbucket
+git push -u origin main
+git push -u gitlab main
+git push -u bitbucket main
 ```

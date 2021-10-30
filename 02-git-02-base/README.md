@@ -68,3 +68,27 @@ Date:   Fri Oct 29 18:49:25 2021 +0300
 
     testing
 ```
+
+Опубликуем теги в репозиториях
+```
+GitHub:
+
+  $git push origin HEAD:main
+  $git push origin --tags HEAD:main
+  $git push origin HEAD
+```
+```
+GitLab:
+
+  $git push gitlab HEAD:main
+  $git push gitlab --tags HEAD:main
+  $git push gitlab HEAD
+```
+```
+Bitbucket
+
+  $git push bitbucket HEAD:main
+  $git push bitbucket --tags HEAD:main
+  $git push bitbucket HEAD
+```
+

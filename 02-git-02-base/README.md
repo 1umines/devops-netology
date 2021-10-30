@@ -176,4 +176,6 @@ a527788 file delete and move
 43a2d9b Initial commit
 ```
 
+Правим файл из PyCharm
+
 

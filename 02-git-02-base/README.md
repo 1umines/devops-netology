@@ -92,3 +92,88 @@ Bitbucket
   $git push bitbucket HEAD
 ```
 
+Находим коммит с комментарием "file delete and move"
+
+```
+MacBook-lumines:devops-netology lumines$ git log --grep="file delete and move"
+commit a52778848917d77f986338bff4e1b4635c44acad
+Author: Kravtsov Egor <luminesx@gmail.com>
+Date:   Thu Oct 28 11:18:57 2021 +0300
+
+    file delete and move
+```
+
+Переходим на этот коммит
+
+```
+MacBook-lumines:devops-netology lumines$ git checkout a52778848917d77f986338bff4e1b4635c44acad
+Note: switching to 'a52778848917d77f986338bff4e1b4635c44acad'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a527788 file delete and move
+```
+
+Делаем переход на ветку fix
+
+```
+MacBook-lumines:devops-netology lumines$ git switch -c fix
+Switched to a new branch 'fix'
+MacBook-lumines:devops-netology lumines$ git push -u origin fix
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'fix' on GitHub by visiting:
+remote:      https://github.com/1umines/devops-netology/pull/new/fix
+remote:
+To https://github.com/1umines/devops-netology.git
+ * [new branch]      fix -> fix
+Branch 'fix' set up to track remote branch 'fix' from 'origin'.
+```
+Делаем коммит в ветке fix
+
+```
+MacBook-lumines:devops-netology lumines$ git add .
+MacBook-lumines:devops-netology lumines$ git commit -m 'First commit to fix'
+[fix 29551b0] First commit to fix
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+MacBook-lumines:devops-netology lumines$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 908 bytes | 908.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/1umines/devops-netology.git
+   a527788..29551b0  fix -> fix
+```
+
+Смотрим схему после коммита в ветку fix
+```
+https://github.com/1umines/devops-netology/network
+```
+
+Смотрим историю коммитов в ветке fix
+```
+MacBook-lumines:devops-netology lumines$ git log --oneline -10
+29551b0 (HEAD -> fix, origin/fix) First commit to fix
+a527788 file delete and move
+599023a added terraform folders
+88d3495 First commit
+43a2d9b Initial commit
+```
+
+

@@ -55,15 +55,16 @@ git tag -a v0.1 -m 'annot tag'
 ```
 проверка 
 ```
-git show v0.1
-MacBook-lumines:devops-netology lumines$ git show v0.1
-tag v0.1
-Tagger: Kravtsov Egor <luminesx@gmail.com>
-Date:   Fri Oct 29 20:32:58 2021 +0300
+MacBook-lumines:02-git-02-base lumines$ git log  -5
+commit 8e28d0e1504f0a5142581d27e1dceb93bb9ec68d (HEAD -> main, tag: v0.2, origin/main, origin/HEAD, gitlab/main, bitbucket/main)
+Author: Kravtsov Egor <luminesx@gmail.com>
+Date:   Fri Oct 29 20:37:10 2021 +0300
 
-annot tag
+    tag info
 
-commit 4c5e92e9c46992b5433df379510aed6eec94748b (HEAD -> main, tag: v0.1, tag: v0.0, origin/main, origin/HEAD, gitlab/main)
+commit 4c5e92e9c46992b5433df379510aed6eec94748b (tag: v0.1, tag: v0.0)
 Author: Kravtsov Egor <luminesx@gmail.com>
 Date:   Fri Oct 29 18:49:25 2021 +0300
+
+    testing
 ```

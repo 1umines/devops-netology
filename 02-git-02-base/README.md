@@ -177,5 +177,7 @@ a527788 file delete and move
 ```
 
 Правим файл из PyCharm
-
-
+ссылка на файл 
+```
+https://take.ms/8MNhS
+```

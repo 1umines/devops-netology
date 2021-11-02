@@ -1,13 +1,11 @@
-  GNU nano 2.0.6          File: 02-git-03-branching/branching/rebase.sh
-
 #!/bin/bash
 # display command line options
-
 count=1
 for param in "$@"; do
-    echo "Next parameter: $param"
+<<<<<<< HEAD
+    echo "\$@ Parameter #$count = $param"
+=======
+    echo "Parameter: $param"
+>>>>>>> dc4688f... git 2.3 rebase @ instead *
     count=$(( $count + 1 ))
 done
-
-echo "====="
-
